@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>linkedin homepage</title>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+	<div class="nav" >
+		<nav>
+			<div class="logo">
+				<img src="in.png" width="35" height="35">
+			</div>
+			<form class="input-icons">
+				<i class="fa fa-search icon" aria-hidden="true"></i>
+				<input class="input-field" type="text" placeholder="Search.." name="search" height="150">
+			</form>
+			<ul>
+				<i class="fa fa-home " aria-hidden="true" class="active" href="index.html"></i>
+				<i class="fa fa-users" aria-hidden="true" href="about.html" href="network.html"></i>
+				<i class="fa fa-briefcase" aria-hidden="true" href="jobs.html"></i>
+				<i class="fa fa-commenting-o" aria-hidden="true" href="messages.html"></i>
+				<i class="fa fa-bell" aria-hidden="true" href="notification.html"></i>
+				<i class="fa fa-user-circle-o" aria-hidden="true"></i>
+				<i class="fa fa-th" class="work"  aria-hidden="true"></i>
+				<i style="font-size: 12px; color: white; display: inline-block;"><a target="_blank">Try Premium Free for 1 month</a></i>
+			</ul>
+		</nav>
+	</div>
+	<div class="row">
+		<div class="card" id="card1">
+			
+		</div>
+
+		<div class="card" id="card2">
+			<div class="card-header">
+				<i class="fa fa-ellipsis-h" style="float: right;margin-top: 5px;opacity: 0.6; align-items: center;" aria-hidden="true"></i>
+				<p style="font-size: 12px;;margin-top: 4px;">John Doe and Morgon bow like this</p>
+			</div>
+			<div class="top">
+				<i class="fa fa-ellipsis-h" style="float: right;;opacity: 0.6;margin:15px;" aria-hidden="true"></i>
+				<img src="profile.jpg" alt="profile" class="profile">
+				<p style="display: inline-block; font-size: 12px;">John Rest</p>
+			</div>
+			<div class="content">
+				<img src="pexels.jpeg">
+			</div>
+			<div class="reactions">
+				<button class="like-button">
+	  				<div class="mdc"></div>
+	  					<i class="fa fa-thumbs-o-up" clstyle=" font-size: 16px;"   aria-hidden="true"></i>
+	  					<span class="mdc-button__label">Like</span>
+				</button>
+				<button class="Comment-button">
+	  				<div class="mdc"></div>
+	  					<i class="fa fa-comment-o" style=" font-size: 16px;"   aria-hidden="true"></i>
+	  					<span class="mdc-button__label">Comment</span>
+				</button>
+				<button class="mdc-button">
+	  				<div class="mdc"></div>
+	  					<i class="fa fa-share" style=" font-size: 16px;"   aria-hidden="true"></i>
+	  					<span class="mdc-button__label">Share</span>
+				</button>
+				<button class="mdc-button">
+	  				<div class="mdc"></div>
+	  					<i class="fa fa-paper-plane-o" style=" font-size: 16px;"   aria-hidden="true"></i>
+	  					<span class="mdc-button__label">Send</span>
+				</button>
+			</div>
+		</div>
+
+		
+		
+		<div class="card" id="card3">
+			
+		</div>
+	</div>
+	<script>
+		const likeButton = document.querySelector('.like-button')
+
+
+		likeButton.addEventListener('click', () => {
+					likeButton.classList.add('big')
+		})
+
+
+		likeButton.addEventListener('transitionend', () => {
+  					likeButton.classList.remove('big')
+		})
+	</script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
